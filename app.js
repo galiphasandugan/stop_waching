@@ -47,10 +47,12 @@ play.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
-  audio.pause();
-
+  min = 0;
+  sec = 0;
+  mSec = 0;
   clearInterval(timer);
-  clock.textContent = "00:00:00";
+  audio.pause();
+  clock.innerHTML = `$0{min}:$0{sec}:$0{mSec}`;
   play.innerHTML = `<i class="fa-solid fa-circle-play"></i>`;
   run = false;
 });
