@@ -52,7 +52,7 @@ reset.addEventListener("click", () => {
   mSec = 0;
   clearInterval(timer);
   audio.pause();
-  clock.innerHTML = `$0{min}:$0{sec}:$0{mSec}`;
+  clock.innerHTML = `0${min}:0${sec}:0${mSec}`;
   play.innerHTML = `<i class="fa-solid fa-circle-play"></i>`;
   run = false;
 });
